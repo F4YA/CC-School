@@ -11,5 +11,12 @@ namespace CCSchool.Business.Models
         public int Id { get; set; }
         public string User { get; set; }
         public bool Active { get; set; }
+
+        public List<Subject> Subjects { get; set; }
+
+        public Instructor()
+        {
+            Subjects = new List<Subject>();
+        }
     }
 }

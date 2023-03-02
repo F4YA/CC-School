@@ -10,5 +10,12 @@ namespace CCSchool.Business.Models
     {
         public int Id { get; set; }
         public string Type { get; set; }
+
+        public List<Document> Documents { get; set; }
+
+        public DocumentType()
+        {
+            Documents = new List<Document>();
+        }
     }
 }

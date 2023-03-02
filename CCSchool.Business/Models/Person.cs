@@ -12,9 +12,15 @@ namespace CCSchool.Business.Models
         public string Name { get; set; }
         public string Email { get; set; }
         public string Password { get; private set; }
-        public int Phone { get; set; }
         public DateOnly Birth { get; set; }
 
         public List<Document> Documents { get; set; }
+        public List<Phone> Phones { get; set; }
+
+        public Person()
+        {
+            Documents = new List<Document>();
+            Phones = new List<Phone>();
+        }
     }
 }
